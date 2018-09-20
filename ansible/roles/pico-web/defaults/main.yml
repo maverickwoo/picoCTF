@@ -33,7 +33,8 @@ pico_api_proxy_pass: "http://{{ gunicorn_listen_on }}"
 pico_site_config_name: "ctf"
 
 # http access and remote specific
-pico_internal_allow: "10.0.1.0/24"
+# TODO: should be generated from the inventory to support multiple shell servers
+pico_internal_allow: "{{ shell_ip }}"
 
 # ctf daemon_manager
 daemon_src_dir: "{{ pico_web_api_dir}}/daemons"

@@ -16,4 +16,4 @@ dev_web     ansible_connection=local    hostname=pico-local-dev-web-db
 dev_shell   ansible_connection=local    hostname=pico-local-dev-shell
 
 [web]
-dev_web     ansible_connection=local    hostname=pico-local-dev-web-db
+dev_web     ansible_connection=local    hostname=pico-local-dev-web-db enable_basic_auth=True
